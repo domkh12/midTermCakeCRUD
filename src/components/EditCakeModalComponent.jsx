@@ -92,6 +92,7 @@ export function EditCakeModalComponent() {
             picture: base64Image
         })
         resetForm();
+        setBase64Image(null);
         dispatch(setIsOpenAddNew(false));
     };
 
