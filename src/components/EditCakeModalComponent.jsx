@@ -4,7 +4,7 @@ import {
     Label,
     Modal,
     ModalBody,
-    ModalHeader,
+    ModalHeader, Spinner,
     TextInput
 } from "flowbite-react";
 import {useDispatch, useSelector} from "react-redux";
@@ -144,7 +144,9 @@ export function EditCakeModalComponent() {
                             </div>
 
                             <div className="w-full flex justify-end">
-                                <Button type="submit">ផ្លាស់ប្ដូរ</Button>
+                                <Button type="submit">
+                                    {isLoading && <Spinner size="sm" aria-label="Info spinner example" className="me-3" light />}
+                                    ផ្លាស់ប្ដូរ</Button>
                             </div>
                         </Form>
                     </Formik>
