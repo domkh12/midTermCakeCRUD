@@ -21,7 +21,7 @@ export function CardCakeComponent({cakeId}) {
 
     return (
         <Card
-            className="w-full relative group"
+            className="w-full relative"
         >
             <div className="h-[260px] w-full overflow-hidden">
                 <img
@@ -37,7 +37,7 @@ export function CardCakeComponent({cakeId}) {
                 {cake?.other || "Unknown"}
             </p>
 
-            <div className="group-hover:flex gap-2 absolute bottom-2 right-2 hidden">
+            <div className=" gap-2 absolute bottom-2 right-2  flex">
                 <Button pill onClick={() => {
                     dispatch(setIsOpenEditCake(true))
                     dispatch(setIdCakeToEdit(cakeId))
