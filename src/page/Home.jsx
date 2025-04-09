@@ -15,8 +15,6 @@ function Home() {
         refetchOnMountOrArgChange: true
     });
 
-    console.log("isFetching",isFetching)
-
     let content;
 
     if (isLoading) {
